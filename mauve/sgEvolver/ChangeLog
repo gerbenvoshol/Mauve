@@ -1,0 +1,6 @@
+Version 0.2.4
+- Fixed broken simujobrun.pl
+  - made it read simujobparams.pm
+  - added a 'none' target
+- Implemented the gapped interval sequence as a splay tree
+  in preparation for unequal distribution of indel sites
