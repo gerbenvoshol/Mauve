@@ -7,19 +7,27 @@ Mauve development began at the University of Wisconsin-Madison with a team inclu
 
 This version has a patched mauve-gui which allows it to run on modern systems.
 
-The orignal unpatched Mauve build instructions are included in the file BUILD_INSTRUCTIONS.txt. On Ubuntu 19.04 it is possible to install Mauve using:
-sudo apt-get install mauve
+The orignal unpatched Mauve build instructions are included in the file `BUILD_INSTRUCTIONS.txt`. 
 
-Download the repository and unzip it.
+On `Ubuntu 19.04` it is possible to install Mauve using:
+
+`sudo apt-get install mauve`
+
+Otherwise download the repository and unzip it.
+
+```
 cd mauve/mauve
 ant dist
+```
 
 the build is in the dist folder.
 
 NOTE: for people with a high resolution display it is possible to scale the program by changing:
 
+```
 JAVA_ARGS="-Xms200M -Xmx500M"
 
 into
 
 JAVA_ARGS="-Xms200M -Xmx500M -Dsun.java2d.uiScale=2.5"
+```
