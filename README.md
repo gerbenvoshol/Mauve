@@ -7,11 +7,13 @@ Mauve development began at the University of Wisconsin-Madison with a team inclu
 
 This version has a patched mauve-gui which allows it to run on modern systems.
 
-The orignal unpatched Mauve build instructions are included in the file `BUILD_INSTRUCTIONS.txt`. On `Ubuntu 19.04` it is possible to install Mauve using:
+The orignal unpatched Mauve build instructions are included in the file `BUILD_INSTRUCTIONS.txt`. 
+
+On `Ubuntu 19.04` it is possible to install Mauve using:
 
 `sudo apt-get install mauve`
 
-Download the repository and unzip it.
+Otherwise download the repository and unzip it.
 
 ```
 cd mauve/mauve
