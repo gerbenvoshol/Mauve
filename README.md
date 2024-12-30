@@ -7,19 +7,31 @@ Mauve development began at the University of Wisconsin-Madison with a team inclu
 
 This version has a patched mauve-gui which allows it to run on modern systems.
 
-The orignal unpatched Mauve build instructions are included in the file BUILD_INSTRUCTIONS.txt. On Ubuntu 19.04 it is possible to install Mauve using:
+The orignal unpatched Mauve build instructions are included in the file BUILD_INSTRUCTIONS.txt. On Ubuntu **19.04** it is possible to install Mauve using:
+
+```
 sudo apt-get install mauve
+```
 
-Download the repository and unzip it.
-cd mauve/mauve
-ant dist
+# For the custom build
 
-the build is in the dist folder.
+To use Mauve, first download this repository, change to its directory, and compile with:
+
+```
+ant compile  # compiles all the java files into class files
+ant jar  # creates Mauve.jar
+```
+
+and then you can run Mauve with:
+
+```
+java -jar Mauve.jar
+```
+
+You may want to use a different maximum heap size with the appropriate -Xmx option, for example java -Xmx10G -jar Mauve.jar for a 10 GB memory size. Depending on what you do, Mauve may need different values to operate correctly.
 
 NOTE: for people with a high resolution display it is possible to scale the program by changing:
 
-JAVA_ARGS="-Xms200M -Xmx500M"
-
-into
-
-JAVA_ARGS="-Xms200M -Xmx500M -Dsun.java2d.uiScale=2.5"
+```
+JAVA_ARGS="-Xms200M -Xmx10G -Dsun.java2d.uiScale=2.5"
+```
